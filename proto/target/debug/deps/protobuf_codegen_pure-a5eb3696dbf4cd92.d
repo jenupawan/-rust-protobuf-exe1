@@ -1,0 +1,11 @@
+/mnt/sdb7/Surya_Soft/proto/proto/target/debug/deps/protobuf_codegen_pure-a5eb3696dbf4cd92.rmeta: /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/lib.rs /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/convert.rs /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/model.rs /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/parser.rs /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/str_lit.rs
+
+/mnt/sdb7/Surya_Soft/proto/proto/target/debug/deps/libprotobuf_codegen_pure-a5eb3696dbf4cd92.rlib: /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/lib.rs /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/convert.rs /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/model.rs /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/parser.rs /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/str_lit.rs
+
+/mnt/sdb7/Surya_Soft/proto/proto/target/debug/deps/protobuf_codegen_pure-a5eb3696dbf4cd92.d: /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/lib.rs /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/convert.rs /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/model.rs /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/parser.rs /home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/str_lit.rs
+
+/home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/lib.rs:
+/home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/convert.rs:
+/home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/model.rs:
+/home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/parser.rs:
+/home/pj/.cargo/registry/src/github.com-1ecc6299db9ec823/protobuf-codegen-pure-2.14.0/src/str_lit.rs:
