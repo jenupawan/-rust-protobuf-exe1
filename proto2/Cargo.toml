@@ -1,0 +1,12 @@
+[package]
+name = "proto2"
+version = "0.1.0"
+authors = ["Pawan Jenu <pawanjenu@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+protobuf = { version = "2.14.0", features = ["with-bytes"] }
+chrono = "0.4.11"
+time = "0.2.16"
+clap = "2.33.1"
