@@ -43,8 +43,7 @@ let mut stream = protobuf::CodedInputStream::from_buffered_reader(&mut input_buf
     while !stream.eof().unwrap_or(false) {
 
         let person_from_file:person_obj = stream.read_message().unwrap();
-        // println!("{:?}",person_from_file );
-        let  date_only = NaiveDate::parse_from_str("2020-01-15", "%Y-%m-%d");
+        let  date_only = NaiveDate::parse_from_str(person_from_file.get_dob(), "%Y-%m-%d");
         let  person_date = Utc.from_local_date(&date_only.unwrap()).unwrap();
         let out = format!("{:?} age:{}\n",person_from_file,calculate_age(person_date));
         ofile.write_all(out.as_bytes()).expect("unable to write");

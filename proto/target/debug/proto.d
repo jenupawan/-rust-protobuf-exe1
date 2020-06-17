@@ -1,1 +1,0 @@
-/mnt/sdb7/Surya_Soft/proto/proto/target/debug/proto: /mnt/sdb7/Surya_Soft/proto/proto/src/main.rs /mnt/sdb7/Surya_Soft/proto/proto/src/person.rs /mnt/sdb7/Surya_Soft/proto/proto/target/debug/debug/build/protobuf-440202546a81ee00/out/version.rs
