@@ -26,7 +26,7 @@ use protobuf::ProtobufEnum as ProtobufEnum_imported_for_functions;
 /// of protobuf runtime.
 // const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_2_14_0;
 
-#[derive(PartialEq,Clone,Default)]
+#[derive(PartialEq, Clone, Default)]
 pub struct Person {
     // message fields
     pub last_name: ::std::string::String,
@@ -49,7 +49,6 @@ impl Person {
     }
 
     // string last_name = 1;
-
 
     pub fn get_last_name(&self) -> &str {
         &self.last_name
@@ -76,7 +75,6 @@ impl Person {
 
     // string first_name = 2;
 
-
     pub fn get_first_name(&self) -> &str {
         &self.first_name
     }
@@ -101,7 +99,6 @@ impl Person {
     }
 
     // string dob = 3;
-
 
     pub fn get_dob(&self) -> &str {
         &self.dob
@@ -132,22 +129,38 @@ impl ::protobuf::Message for Person {
         true
     }
 
-    fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::ProtobufResult<()> {
+    fn merge_from(
+        &mut self,
+        is: &mut ::protobuf::CodedInputStream<'_>,
+    ) -> ::protobuf::ProtobufResult<()> {
         while !is.eof()? {
             let (field_number, wire_type) = is.read_tag_unpack()?;
             match field_number {
                 1 => {
-                    ::protobuf::rt::read_singular_proto3_string_into(wire_type, is, &mut self.last_name)?;
-                },
+                    ::protobuf::rt::read_singular_proto3_string_into(
+                        wire_type,
+                        is,
+                        &mut self.last_name,
+                    )?;
+                }
                 2 => {
-                    ::protobuf::rt::read_singular_proto3_string_into(wire_type, is, &mut self.first_name)?;
-                },
+                    ::protobuf::rt::read_singular_proto3_string_into(
+                        wire_type,
+                        is,
+                        &mut self.first_name,
+                    )?;
+                }
                 3 => {
                     ::protobuf::rt::read_singular_proto3_string_into(wire_type, is, &mut self.dob)?;
-                },
+                }
                 _ => {
-                    ::protobuf::rt::read_unknown_or_skip_group(field_number, wire_type, is, self.mut_unknown_fields())?;
-                },
+                    ::protobuf::rt::read_unknown_or_skip_group(
+                        field_number,
+                        wire_type,
+                        is,
+                        self.mut_unknown_fields(),
+                    )?;
+                }
             };
         }
         ::std::result::Result::Ok(())
@@ -171,7 +184,10 @@ impl ::protobuf::Message for Person {
         my_size
     }
 
-    fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::ProtobufResult<()> {
+    fn write_to_with_cached_sizes(
+        &self,
+        os: &mut ::protobuf::CodedOutputStream<'_>,
+    ) -> ::protobuf::ProtobufResult<()> {
         if !self.last_name.is_empty() {
             os.write_string(1, &self.last_name)?;
         }
@@ -216,29 +232,37 @@ impl ::protobuf::Message for Person {
     }
 
     fn descriptor_static() -> &'static ::protobuf::reflect::MessageDescriptor {
-        static mut descriptor: ::protobuf::lazy::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::lazy::Lazy::INIT;
+        static mut descriptor: ::protobuf::lazy::Lazy<::protobuf::reflect::MessageDescriptor> =
+            ::protobuf::lazy::Lazy::INIT;
         unsafe {
             descriptor.get(|| {
                 let mut fields = ::std::vec::Vec::new();
-                fields.push(::protobuf::reflect::accessor::make_simple_field_accessor::<_, ::protobuf::types::ProtobufTypeString>(
+                fields.push(::protobuf::reflect::accessor::make_simple_field_accessor::<
+                    _,
+                    ::protobuf::types::ProtobufTypeString,
+                >(
                     "last_name",
-                    |m: &Person| { &m.last_name },
-                    |m: &mut Person| { &mut m.last_name },
+                    |m: &Person| &m.last_name,
+                    |m: &mut Person| &mut m.last_name,
                 ));
-                fields.push(::protobuf::reflect::accessor::make_simple_field_accessor::<_, ::protobuf::types::ProtobufTypeString>(
+                fields.push(::protobuf::reflect::accessor::make_simple_field_accessor::<
+                    _,
+                    ::protobuf::types::ProtobufTypeString,
+                >(
                     "first_name",
-                    |m: &Person| { &m.first_name },
-                    |m: &mut Person| { &mut m.first_name },
+                    |m: &Person| &m.first_name,
+                    |m: &mut Person| &mut m.first_name,
                 ));
-                fields.push(::protobuf::reflect::accessor::make_simple_field_accessor::<_, ::protobuf::types::ProtobufTypeString>(
-                    "dob",
-                    |m: &Person| { &m.dob },
-                    |m: &mut Person| { &mut m.dob },
+                fields.push(::protobuf::reflect::accessor::make_simple_field_accessor::<
+                    _,
+                    ::protobuf::types::ProtobufTypeString,
+                >(
+                    "dob", |m: &Person| &m.dob, |m: &mut Person| &mut m.dob
                 ));
                 ::protobuf::reflect::MessageDescriptor::new_pb_name::<Person>(
                     "Person",
                     fields,
-                    file_descriptor_proto()
+                    file_descriptor_proto(),
                 )
             })
         }
@@ -246,9 +270,7 @@ impl ::protobuf::Message for Person {
 
     fn default_instance() -> &'static Person {
         static mut instance: ::protobuf::lazy::Lazy<Person> = ::protobuf::lazy::Lazy::INIT;
-        unsafe {
-            instance.get(Person::new)
-        }
+        unsafe { instance.get(Person::new) }
     }
 }
 
@@ -279,16 +301,14 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x10\n\x03dob\x18\x03\x20\x01(\tR\x03dobb\x06proto3\
 ";
 
-static mut file_descriptor_proto_lazy: ::protobuf::lazy::Lazy<::protobuf::descriptor::FileDescriptorProto> = ::protobuf::lazy::Lazy::INIT;
+static mut file_descriptor_proto_lazy: ::protobuf::lazy::Lazy<
+    ::protobuf::descriptor::FileDescriptorProto,
+> = ::protobuf::lazy::Lazy::INIT;
 
 fn parse_descriptor_proto() -> ::protobuf::descriptor::FileDescriptorProto {
     ::protobuf::parse_from_bytes(file_descriptor_proto_data).unwrap()
 }
 
 pub fn file_descriptor_proto() -> &'static ::protobuf::descriptor::FileDescriptorProto {
-    unsafe {
-        file_descriptor_proto_lazy.get(|| {
-            parse_descriptor_proto()
-        })
-    }
+    unsafe { file_descriptor_proto_lazy.get(|| parse_descriptor_proto()) }
 }

@@ -7,7 +7,5 @@ authors = ["Pawan Jenu <pawanjenu@gmail.com>"]
 
 [dependencies]
 protobuf = { version = "2.14.0", features = ["with-bytes"] }
-
 protoc-rust = "2.14.0"
 clap = "2.33.1"
-

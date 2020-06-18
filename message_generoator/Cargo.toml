@@ -7,4 +7,3 @@ authors = ["Pawan Jenu <pawanjenu@gmail.com>"]
 
 [dependencies]
 protoc-rust = "2.14.0"
-
