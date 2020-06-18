@@ -5,5 +5,5 @@ fn main() {
         .inputs(&["proto_file/person.proto"])
         .include("proto_file")
         .run()
-        .expect("Running protoc failed.");
+        .expect("unable to generate rust file from the proto file");
 }
