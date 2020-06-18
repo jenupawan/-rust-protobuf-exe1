@@ -48,9 +48,6 @@ fn main() {
         let person_from_file: Person = stream.read_message().expect("unable to read message");
         let person_dob = NaiveDate::parse_from_str(person_from_file.get_dob(), "%Y-%m-%d")
             .expect("unable to parse person date");
-        // let current_system_time: SystemTime = SystemTime::now();
-        // let current_date_time: DateTime<Utc> = DateTime::from(current_system_time);
-        // let current_date = current_date_time.naive_local().date();
         let out = format!(
             "{:?} age:{}\n",
             person_from_file,
