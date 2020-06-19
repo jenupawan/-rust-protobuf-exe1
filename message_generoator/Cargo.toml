@@ -1,0 +1,9 @@
+[package]
+name = "message_generator"
+version = "0.1.0"
+authors = ["Pawan Jenu <pawanjenu@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+protoc-rust = "2.14.0"

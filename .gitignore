@@ -1,0 +1,8 @@
+message_generoator/target/
+message_generoator/Cargo.lock
+proto/target/
+proto/protos/.rustc_info.json
+proto/Cargo.lock
+proto2/target/
+proto2/Cargo.lock/
+
