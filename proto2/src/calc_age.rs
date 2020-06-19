@@ -68,9 +68,9 @@ fn test2_calculate_age() {
 #[test]
 fn test3_calculate_age() {
     let from_date =
-        NaiveDate::parse_from_str("1999-01-09", "%Y-%m-%d").expect("unable to parse from date");
+        NaiveDate::parse_from_str("1999-12-31", "%Y-%m-%d").expect("unable to parse from date");
     let current_date =
-        NaiveDate::parse_from_str("1999-01-10", "%Y-%m-%d").expect("unable to parse current date");
+        NaiveDate::parse_from_str("2000-01-01", "%Y-%m-%d").expect("unable to parse current date");
 
     assert_eq!(
         calculate_age!(from_date, current_date),
@@ -84,6 +84,28 @@ fn test4_calculate_age() {
         NaiveDate::parse_from_str("2021-01", "%Y-%m-%d").expect("unable to parse from date");
     let current_date =
         NaiveDate::parse_from_str("2020-01-15", "%Y-%m-%d").expect("unable to parse current date");
+
+    calculate_age!(from_date, current_date);
+}
+
+#[test]
+#[should_panic(expected = "unable to parse from date")]
+fn test5_calculate_age() {
+    let from_date =
+        NaiveDate::parse_from_str("2021-01-32", "%Y-%m-%d").expect("unable to parse from date");
+    let current_date =
+        NaiveDate::parse_from_str("2020-01-15", "%Y-%m-%d").expect("unable to parse current date");
+
+    calculate_age!(from_date, current_date);
+}
+
+#[test]
+#[should_panic(expected = "unable to parse from date")]
+fn test6_calculate_age() {
+    let from_date =
+        NaiveDate::parse_from_str("2019-02-29", "%Y-%m-%d").expect("unable to parse from date");
+    let current_date =
+        NaiveDate::parse_from_str("2020-05-15", "%Y-%m-%d").expect("unable to parse current date");
 
     calculate_age!(from_date, current_date);
 }
